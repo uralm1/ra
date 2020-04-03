@@ -1,0 +1,47 @@
+% layout 'default';
+<div class="scont">
+<div id="tab-reg">
+  <h5>Регистрация</h5>
+  <p>Ахтунг!</p>
+</div>
+
+<div id="tab-doc">
+  <h5>Инструкция</h5>
+  <p>Ахтунг!</p>
+</div>
+
+<div id="tab-dl">
+  <h5>Загрузка</h5>
+  <p>Ахтунг!</p>
+</div>
+
+<div id="tab-stat">
+  <h5>Статистика Ваших подключений</h5>
+  <table class="highlight">
+    <thead>
+      <tr>
+	<th style="">N</th>
+	<th style="">Время подключения</th>
+	<th style="">Время отключения</th>
+	<th style="">Адрес</th>
+	<th style="">Продолжительность</th>
+	<th style="">Байт получено</th>
+	<th style="">Байт отправлено</th>
+	<th style="">user</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+	<td>1</td>
+	<td>222</td>
+	<td>333</td>
+	<td>444</td>
+	<td>555</td>
+	<td>666</td>
+	<td>777</td>
+	<td>user</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Управление удаленным доступом</title>
+  <!--link rel="shortcut icon" href="/img/favicon.ico"-->
+  <!--link rel="stylesheet" href="/css/fonts-roboto.css"-->
+  <link rel="stylesheet" href="/css/materialize.min.css">
+  <link rel="stylesheet" href="/css/material-icons.css">
+  <link rel="stylesheet" href="/css/styles.css?v=1">
+</head>
+<body>
+  <!--[if lte IE 9]>
+    <div class="section"><div class="container"><div class="card-panel red">
+      <b class="white-text">ВНИМАНИЕ! Вы используете устаревшую версию браузера Интернет. Многие элементы страницы будут отображены некорректно. Обновите версию Вашего браузера!</b>
+    </div></div></div>
+  <![endif]-->
+  <nav class="nav-extended indigo darken-1 white-text">
+    <div class="nav-wrapper scont">
+      <h4 class="brand-logo">Удаленный доступ</h4>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="<%== config 'help_url' %>" target="_blank"><i class="material-icons">help</i></a></li>
+      </ul>
+    </div>
+    <div class="nav-content scont">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a class="active" href="#tab-reg">Регистрация</a></li>
+        <li class="tab"><a href="#tab-doc">Инструкция</a></li>
+        <li class="tab"><a href="#tab-dl">Загрузка ПО</a></li>
+        <li class="tab"><a href="#tab-stat">Статистика</a></li>
+      </ul>
+    </div>
+  </nav>
+<%= content %>
+  <footer class="page-footer indigo lighten-2">
+    <div class="footer-copyright">
+      <div class="scont">
+	<span title="Версия: <%== $version %>. Автор: Урал Хасанов, 2020">Группа сетевого администрирования</span>
+        <span> &#x00b7 МУП "Уфаводоканал"</span>
+	<span class="right">(Текущий пользователь: <%= $remote_user %>)</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="/js/materialize.min.js"></script>
+  <script>$(document).ready(function(){$('.tabs').tabs()})</script>
+</body>
+</html>
