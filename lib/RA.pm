@@ -26,6 +26,8 @@ sub startup {
   # upload file limit 16mb
   $self->max_request_size(16777216);
 
+  $self->plugin('RA::Plugin::Utils');
+
   $self->defaults(version => $VERSION);
 
   # Router authentication routine
